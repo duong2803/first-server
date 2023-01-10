@@ -45,7 +45,7 @@ app.get('/api/price/upbit/:coin', async (req, res) => {
     try {
         const { coin } = req.params
 
-        const data = await fetch(`https://api.upbit.com/v1/candles/minutes/1?market=USDT-${coin}`)
+        const data = await fetch(`https://api.upbit.com/v1/candles/minutes/1?market=KRW-${coin}`)
         const ohlcv = await data.json()
         if (!ohlcv) {
             return res.status(404).json({ "status": "Failed" })
