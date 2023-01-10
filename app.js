@@ -1,6 +1,7 @@
 const ccxt = require('ccxt')
 const express = require('express')
 const cors = require('cors')
+const fetch = require('cross-fetch')
 
 const app = express()
 const Binance = new ccxt.binance()
